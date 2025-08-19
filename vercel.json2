@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "public/index.php",
+            "use": "@vercel/php"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/public/index.php"
+        }
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
+        "APP_KEY": "base64:4JZ4UB6gPD8QI+0OhXG8tgg/WxDlgMj7FpdiPmqPWF8=",
+        "DB_CONNECTION": "mysql",
+        "DB_HOST": "thiran360ai-db.cluster-c12345.us-east-1.rds.amazonaws.com",
+        "DB_PORT": "3306",
+        "DB_DATABASE": "thiran360ai_db",
+        "DB_USERNAME": "admin",
+        "DB_PASSWORD": "yourpassword"
+    },
+    "functions": {}
+}
