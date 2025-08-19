@@ -5,7 +5,6 @@
     "src": "public/index.php",
     "use": "@vercel/php@latest"
   }
-]
   ],
   "routes": [
     { "src": "/(.*)", "dest": "public/index.php" }
