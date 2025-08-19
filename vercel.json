@@ -1,26 +1,12 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "public/index.php",
-            "use": "@vercel/php"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/public/index.php"
-        }
-    ],
-    "env": {
-        "APP_KEY": "base64:4JZ4UB6gPD8QI+0OhXG8tgg/WxDlgMj7FpdiPmqPWF8=",
-        "APP_ENV": "production",
-        "APP_DEBUG": "false",
-        "DB_CONNECTION": "mysql",
-        "DB_HOST": "127.0.0.1",
-        "DB_PORT": "3306",
-        "DB_DATABASE": "thiran360ai_db",
-        "DB_USERNAME": "root",
-        "DB_PASSWORD": ""
+  "version": 2,
+  "builds": [
+    {
+      "src": "public/index.php",
+      "use": "@vercel/php"
     }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "public/index.php" }
+  ]
 }
